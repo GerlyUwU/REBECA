@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 6rem 1.5rem;
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+}
+
+.card-pros {
+    border-left: 5px solid #198754;
+}
+
+.card-contras {
+    border-left: 5px solid #dc3545;
+}
+
+.card h5 {
+    font-weight: bold;
+}
+
+/* Comment Section Styles */
+.comment-section {
+    border: 1px solid #dee2e6;
+}
+
+.comment {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment .comment-author {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.comment .comment-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
