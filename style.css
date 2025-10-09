@@ -1,18 +1,30 @@
+:root {
+    --institucion-rojo: #C8102E; /* Rojo del logo */
+    --institucion-azul: #003865; /* Azul del logo */
+    --bs-primary-rgb: 200, 16, 46; /* Valor RGB del rojo para Bootstrap */
+}
+
 body {
     background-color: #f8f9fa;
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-color: var(--institucion-azul);
+    background-image: linear-gradient(rgba(0, 56, 101, 0.8), rgba(0, 56, 101, 0.8)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
+    background-position: center center;
     color: white;
     padding: 6rem 1.5rem;
     text-align: center;
 }
 
 .accordion-button:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
+    color: #ffffff;
+    background-color: var(--institucion-rojo);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(200, 16, 46, 0.25);
 }
 
 .card-pros {
@@ -20,11 +32,22 @@ body {
 }
 
 .card-contras {
-    border-left: 5px solid #dc3545;
+    border-left: 5px solid var(--institucion-rojo);
 }
 
 .card h5 {
     font-weight: bold;
+}
+
+/* Override Bootstrap Button */
+.btn-primary {
+    --bs-btn-bg: var(--institucion-rojo);
+    --bs-btn-border-color: var(--institucion-rojo);
+    --bs-btn-hover-bg: #A3001C;
+    --bs-btn-hover-border-color: #A3001C;
+    --bs-btn-active-bg: #8F0018;
+    --bs-btn-active-border-color: #8F0018;
+    --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
 }
 
 /* Comment Section Styles */
@@ -43,7 +66,7 @@ body {
 
 .comment .comment-author {
     font-weight: bold;
-    color: #0d6efd;
+    color: var(--institucion-azul);
 }
 
 .comment .comment-date {
