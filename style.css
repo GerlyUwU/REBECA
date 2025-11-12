@@ -74,3 +74,21 @@ body {
     color: #6c757d;
 }
 
+
+
+/* En tu archivo style.css */
+
+footer a {
+    color: #333; /* Un color oscuro para los enlaces */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transición suave para los efectos */
+}
+
+footer a:hover {
+    color: #0056b3; /* Un color diferente al pasar el ratón */
+    text-decoration: underline; /* Añade subrayado al pasar el ratón */
+}
+
+footer ul.list-unstyled li {
+    margin-bottom: 8px; /* Pequeño margen entre los elementos de la lista */
+}
