@@ -10,7 +10,7 @@ body {
 
 .hero {
     background-color: var(--institucion-azul);
-    background-image: linear-gradient(rgba(0, 56, 101, 0.8), rgba(0, 56, 101, 0.8)), url(/Media/Images/d41586-025-00405-8_50617222.webp);
+    background-image: linear-gradient(rgba(151, 182, 207, 0.353), rgba(0, 56, 101, 0.546)), url(/Media/Images/d41586-025-00405-8_50617222.webp);
     background-size: cover;
     background-position: center center;
     color: white;
