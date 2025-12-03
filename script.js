@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
                 <p class="mb-2">${safeText}</p>
                 
-                <button class="btn btn-sm btn-link p-0" onclick="window.toggleReplyForm('${id}')">Responder</button>
+                <button class="btn-reply-toggle" onclick="window.toggleReplyForm('${id}')">Responder</button>
             </div>
 
             <div id="replies-container-${id}" class="mt-2">
